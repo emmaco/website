@@ -31,7 +31,11 @@ export interface FooterColumn {
 
 const L = {
   // Programme
-  schedule: { label: "Schedule", url: "/schedule" },
+  talksSchedule: { label: "Talks Schedule", url: "/schedule/talks" },
+  tutorialsSchedule: {
+    label: "Tutorials Schedule",
+    url: "/schedule/tutorials",
+  },
   talks: { label: "Talks", url: "/talks" },
   tutorials: { label: "Tutorials", url: "/tutorials" },
   posters: { label: "Posters", url: "/posters" },
@@ -123,7 +127,8 @@ export const NAV_MENUS: NavMenu[] = [
       {
         label: "Talks & Schedule",
         items: [
-          L.schedule,
+          L.talksSchedule,
+          L.tutorialsSchedule,
           L.talks,
           L.tutorials,
           L.posters,
@@ -227,7 +232,8 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: "Programme",
     items: [
-      L.schedule,
+      L.talksSchedule,
+      L.tutorialsSchedule,
       L.talks,
       L.tutorials,
       L.posters,
